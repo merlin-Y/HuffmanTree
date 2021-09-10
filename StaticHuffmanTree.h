@@ -51,8 +51,8 @@ void SHFMNode::CreatHuffmanTree(int num,vector<char> &a){
         HT[i].rchild = s2;
         HT[i].weight = HT[s1].weight + HT[s2].weight;
     }
-    cout<<"´´½¨¹þ·òÂüÊ÷³É¹¦¡£"<<endl;
-    cout<<"½áµãi"<<"\t×Ö·û"<<"\tÈ¨Öµ"<<"\tË«Ç×"<<"\t×óº¢×Ó"<<"\tÓÒº¢×Ó"<<endl;
+    cout<<"åˆ›å»ºå“ˆå¤«æ›¼æ ‘æˆåŠŸã€‚"<<endl;
+    cout<<"ç»“ç‚¹i"<<"\tå­—ç¬¦"<<"\tæƒå€¼"<<"\tåŒäº²"<<"\tå·¦å­©å­"<<"\tå³å­©å­"<<endl;
     for(int i=1; i<=num; i++)
         cout<<i<<"\t"<<a[i - 1]<<"\t"<<HT[i].weight<<"\t"<<HT[i].parent<<"\t"<<HT[i].lchild<<"\t"<<HT[i].rchild<<endl;
     for(int i = num + 1;i <= num * 2 - 1;i++)
@@ -85,8 +85,8 @@ void SHFMNode::CreatHuffmanTree(vector<int> &a){
         HT[i].rchild = s2;
         HT[i].weight = HT[s1].weight + HT[s2].weight;
     }
-    cout<<"´´½¨¹þ·òÂüÊ÷³É¹¦¡£"<<endl;
-    cout<<"½áµãi"<<"\t×Ö·û"<<"\tÈ¨Öµ"<<"\tË«Ç×"<<"\t×óº¢×Ó"<<"\tÓÒº¢×Ó"<<endl;
+    cout<<"åˆ›å»ºå“ˆå¤«æ›¼æ ‘æˆåŠŸã€‚"<<endl;
+    cout<<"ç»“ç‚¹i"<<"\tå­—ç¬¦"<<"\tæƒå€¼"<<"\tåŒäº²"<<"\tå·¦å­©å­"<<"\tå³å­©å­"<<endl;
     for(int i=1; i<=num; i++)
         cout<<i<<"\t"<<a[i - 1]<<"\t"<<HT[i].weight<<"\t"<<HT[i].parent<<"\t"<<HT[i].lchild<<"\t"<<HT[i].rchild<<endl;
     for(int i = num + 1;i <= num * 2 - 1;i++)
@@ -145,8 +145,8 @@ void SHFMNode::creatHuffmanCode(char ** &HC,int num){
 }
 
 void SHFMNode::PrintCOde(vector<char> &a,char ** &HC,int num){
-    cout<<"¹þ·òÂü±àÂë±íÒÑÉú³É£¬ÏÂÃæÊä³ö¹þ·òÂü±àÂë±í£¡"<<endl;
-    cout<<"½áµãi\t"<<"×Ö·û\t"<<"È¨Öµ\t"<<"±àÂë\t"<<endl;
+    cout<<"å“ˆå¤«æ›¼ç¼–ç è¡¨å·²ç”Ÿæˆï¼Œä¸‹é¢è¾“å‡ºå“ˆå¤«æ›¼ç¼–ç è¡¨ï¼"<<endl;
+    cout<<"ç»“ç‚¹i\t"<<"å­—ç¬¦\t"<<"æƒå€¼\t"<<"ç¼–ç \t"<<endl;
     for(int i=1; i<=num; i++)
         cout<<i<<"\t"<<a[i - 1]<<"\t"<<HT[i].weight<<"\t"<<HC[i]<<endl;
 }

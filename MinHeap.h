@@ -37,7 +37,7 @@ minHeap::minHeap(int sz){
     maxHeapSize = (30 < sz) ? sz : 30;
     heap = new wood[maxHeapSize];
     if(heap == NULL)
-        cout << "¶Ñ´´½¨Ê§°Ü" << endl;
+        cout << "å †åˆ›å»ºå¤±è´¥" << endl;
     currentSize = 0;
 }
 
@@ -75,7 +75,7 @@ void minHeap::siftUp(int start){
 
 bool minHeap::Insert(const dynamicHuffmanTree& x){
     if(currentSize == maxHeapSize){
-        cout << "¶ÑÂú" << endl;
+        cout << "å †æ»¡" << endl;
         return false;
     }
     heap[currentSize] = *x;
@@ -86,7 +86,7 @@ bool minHeap::Insert(const dynamicHuffmanTree& x){
 
 bool minHeap::RemoveMin(DHTNode& x){
     if(!currentSize){
-        cout << "¶Ñ¿Õ" << endl;
+        cout << "å †ç©º" << endl;
     return false;
 }
 x = heap[0];

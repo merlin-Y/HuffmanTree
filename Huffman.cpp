@@ -139,7 +139,10 @@ int main(){
                 StaticHuffmanTree STree = SHFMTree.GetHT();
 
             }
-            if(structure == 2){}
+            if(structure == 2){
+                //root = DHFMTree.CreatHuffmanTree(a,b,num);
+                //preorder(root);
+            }
             break;
         case 6:
             menu();

@@ -122,8 +122,8 @@ void DHFMNode::prinrCode(vector<PrintCode> &vpn,char** &ch,vector<char> &b){
         strcpy(ch[i],vpn[i - 1].code.c_str());
         b.push_back(vpn[i - 1].val);
     }
-    cout<<"¹þ·òÂü±àÂë±íÒÑÉú³É£¬ÏÂÃæÊä³ö¹þ·òÂü±àÂë±í£¡"<<endl;
-    cout<<"½áµãi\t"<<"×Ö·û\t"<<"È¨Öµ\t"<<"±àÂë\t"<<endl;
+    cout<<"å“ˆå¤«æ›¼ç¼–ç è¡¨å·²ç”Ÿæˆï¼Œä¸‹é¢è¾“å‡ºå“ˆå¤«æ›¼ç¼–ç è¡¨ï¼"<<endl;
+    cout<<"ç»“ç‚¹i\t"<<"å­—ç¬¦\t"<<"æƒå€¼\t"<<"ç¼–ç \t"<<endl;
     for(int i=1; i<=vpn.size(); i++)
         cout<<i<<"\t"<<vpn[i - 1].val<<"\t"<<vpn[i - 1].weight<<"\t"<<ch[i]<<endl;
 }
