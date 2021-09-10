@@ -140,8 +140,8 @@ int main(){
 
             }
             if(structure == 2){
-                //root = DHFMTree.CreatHuffmanTree(a,b,num);
-                //preorder(root);
+                root = DHFMTree.CreatHuffmanTree(a,b,num);
+                preorder(root);
             }
             break;
         case 6:
